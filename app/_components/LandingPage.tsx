@@ -20,6 +20,7 @@ import {
   Linkedin,
   Heart,
 } from 'lucide-react';
+import Link from 'next/link';
 
 const LandingPage = () => {
   const features = [
@@ -99,10 +100,11 @@ const LandingPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center px-4">
             <Button
+            asChild
               size="lg"
               className="bg-purple-600 hover:bg-purple-700 w-full sm:w-auto"
             >
-              Get Started Free
+              <Link href="https://image-ai-phi.vercel.app/">Get Started Free</Link>
             </Button>
             <Button size="lg" variant="outline" className="w-full sm:w-auto">
               See Examples
@@ -176,11 +178,12 @@ const LandingPage = () => {
             Join thousands of creators and bring your ideas to life
           </p>
           <Button
+          asChild
             size="lg"
             variant="secondary"
             className="bg-white text-purple-600 hover:bg-gray-100 w-full sm:w-auto mx-2"
           >
-            Start Free Trial
+            <Link href="https://image-ai-phi.vercel.app/">Start Free Trial</Link>
           </Button>
         </div>
       </section>
