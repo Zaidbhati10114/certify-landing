@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Creatify | A powerful, easy-to-use platform for creating stunning designs effortlessly.",
   description: "Creaitfy: A powerful, easy-to-use platform for creating stunning designs effortlessly.",
+  icons: {
+    icon: "/icon.ico",
+  },
 };
 
 
